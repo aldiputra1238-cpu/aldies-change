@@ -1,0 +1,2287 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALDI'E$ CHANGER | Money Changer</title>
+<meta name="description" content="Informasi kurs valuta asing dan kalkulator transaksi ALDI'E$ CHANGER.">
+<meta name="theme-color" content="#eaf8ff">
+
+<style>
+:root{
+  --navy:#123b63;--blue:#1678b9;--cyan:#22b8d6;--sky:#eaf8ff;
+  --lime:#c7ef45;--ink:#17324d;--muted:#647b8f;--line:#dceaf2;
+  --white:#fff;--green:#16845b;--red:#dc4b55;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{font-family:Inter,Arial,sans-serif;background:#f7fbfd;color:var(--ink);line-height:1.6}
+a{color:inherit}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 7%;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.logo{font-size:22px;font-weight:900;letter-spacing:-.7px;color:var(--navy);white-space:nowrap}
+.logo span{color:var(--blue)}
+nav{display:flex;align-items:center;gap:27px;flex-wrap:wrap}
+nav a{text-decoration:none;color:#466178;font-size:13px;font-weight:750;transition:.2s}
+nav a:hover{color:var(--blue)}
+nav .tombol-wa{background:var(--lime);color:#19344b;padding:10px 17px;border-radius:999px}
+nav .tombol-wa:hover{background:#b8e52c;color:#19344b}
+
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  min-height:570px;
+  padding:76px 8%;
+  display:grid;
+  grid-template-columns:1fr;
+  align-items:center;
+  gap:0;
+  background:
+  linear-gradient(90deg,
+    rgba(255,255,255,.06) 0%,
+    rgba(255,255,255,.02) 32%,
+    rgba(255,255,255,0) 65%,
+    transparent 100%
+  ),
+  url('./hero-travel.jpg') center 45% / cover no-repeat;
+}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero-glow{position:absolute;width:280px;height:280px;right:34%;top:8%;border-radius:50%;background:rgba(255,255,255,.48);filter:blur(75px);pointer-events:none;z-index:0}
+.hero:before{width:480px;height:480px;right:-120px;top:-230px;border:1px solid rgba(22,120,185,.13);box-shadow:0 0 0 35px rgba(22,120,185,.035),0 0 0 75px rgba(22,120,185,.025)}
+.hero:after{width:300px;height:300px;left:-180px;bottom:-210px;background:rgba(199,239,69,.22);filter:blur(8px)}
+.hero-content{position:relative;z-index:2;max-width:590px}
+.hero-label,.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;background:#fff;border:1px solid #d7edf7;color:var(--blue);font-size:10px;font-weight:900;letter-spacing:1.8px}
+.hero-label:before{content:"";width:7px;height:7px;background:var(--lime);border-radius:50%}
+.hero h1{font-size:clamp(38px,5vw,63px);line-height:1.08;letter-spacing:-2.4px;color:var(--navy);margin:23px 0 20px}
+.hero h1 span{color:var(--blue)}
+.hero-description{max-width:510px;color:#587187;font-size:15px;line-height:1.9}
+.hero-actions{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  flex-wrap:wrap;
+  margin-top:29px;
+}
+
+.hero-actions > *{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  box-sizing:border-box;
+}
+.hero button,.hero-contact{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 22px;border:0;border-radius:9px;font-size:12px;font-weight:900;text-decoration:none;cursor:pointer;transition:.2s}
+.hero button{background:var(--blue);color:white;box-shadow:0 9px 22px rgba(22,120,185,.18)}
+.hero-contact{background:white;border:1px solid #cfe4ef;color:var(--navy)}
+.hero button:hover,.hero-contact:hover{transform:translateY(-3px)}
+.hero-caption{margin-top:25px;color:#7b91a2;font-size:10px;font-weight:800;letter-spacing:2px}
+
+.hero-benefits{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:18px;
+  margin-top:30px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:5;
+  width:fit-content;
+  max-width:100%;
+  padding:14px 18px;
+  background:rgba(255,255,255,.88);
+  border:1px solid rgba(255,255,255,.95);
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(20,70,100,.12);
+  backdrop-filter:blur(10px);
+}
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  padding: 0;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+
+.hero-trust .trust-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 7px;
+  font-weight: 600;
+  color: #16834a;
+  white-space: nowrap;
+}
+
+.hero-trust .trust-item span {
+  font-size: 9px;
+}
+.hero-benefit{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#173b55;
+  font-size:12px;
+  font-weight:800;
+  line-height:1.5;
+  padding-right:18px;
+  border-right:1px solid #c5e2ed;
+  position:relative;
+  z-index:5;
+}
+.hero-benefit:last-child{border-right:none;padding-right:0}
+.benefit-icon{width:38px;height:38px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:12px;background:#fff;border:1px solid var(--line)}
+.benefit-icon svg{width:21px;height:21px;stroke:currentColor}
+.benefit-copy{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  min-width:0;
+}
+
+.benefit-copy strong{
+  font-size:12px;
+  font-weight:800;
+  color:#173b55;
+  white-space:nowrap;
+}
+
+.benefit-copy small{
+  font-size:10px;
+  color:#52758a;
+}
+
+.benefit-icon.icon-3d{
+  width:48px;
+  height:48px;
+  flex-shrink:0;
+  border:0;
+  border-radius:14px;
+  background:linear-gradient(145deg,#ffffff,#dff7ff);
+  box-shadow:5px 6px 10px rgba(20,90,120,.17),
+             inset 2px 2px 5px #ffffff;
+}
+
+.benefit-icon.icon-3d svg{
+  width:50px;
+  height:50px;
+  filter:
+    drop-shadow(0 3px 2px rgba(0,70,100,.18))
+    drop-shadow(0 0 8px rgba(35,180,230,.18));
+  transition:transform .3s ease, filter .3s ease;
+}
+
+.benefit-icon.icon-3d:hover svg{
+  transform:translateY(-4px) scale(1.08);
+  filter:drop-shadow(0 6px 5px rgba(0,70,100,.25));
+}
+.hero-benefit:nth-child(1) .benefit-icon{color:#16a36a;background:#e8f8ef;border-color:#c6efd7}
+.hero-benefit:nth-child(2) .benefit-icon{color:#079fce;background:#e5f7fc;border-color:#c4eaf5}
+.hero-benefit:nth-child(3) .benefit-icon{color:#4267d5;background:#edf0ff;border-color:#d8defb}
+
+.market-visual{position:relative;z-index:2;width:100%;max-width:570px;margin:auto;padding:28px;border:1px solid rgba(255,255,255,.9);border-radius:25px;background:rgba(255,255,255,.78);box-shadow:0 28px 70px rgba(34,111,153,.15);backdrop-filter:blur(12px);overflow:hidden}
+.market-visual:before{content:"";position:absolute;width:210px;height:210px;right:-80px;top:-100px;border-radius:50%;background:rgba(199,239,69,.3);filter:blur(15px)}
+.market-heading{position:relative;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.market-kicker{color:#7690a3;font-size:9px;font-weight:900;letter-spacing:2px}
+.market-heading h3{color:var(--navy);font-size:23px;margin-top:5px}
+.market-status{font-size:9px;font-weight:800;color:#4b9b73;white-space:nowrap}
+.market-status i{display:inline-block;width:7px;height:7px;background:#55c889;border-radius:50%;margin-right:5px;box-shadow:0 0 0 4px #55c88920}
+.market-currencies{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:20px 0}
+.market-currencies span{padding:5px 0;border:0;border-radius:0;background:transparent;color:#678096;font-size:11px;font-weight:800;cursor:default;pointer-events:none}
+.market-currencies .active{background:transparent;border:0;color:var(--blue)}
+
+.chart-area{height:145px;position:relative;overflow:hidden;border-radius:13px;background:linear-gradient(180deg,#f5fcff,#fff)}
+.chart-grid{position:absolute;inset:0;background-image:linear-gradient(#dceef5 1px,transparent 1px),linear-gradient(90deg,#e7f2f7 1px,transparent 1px);background-size:100% 45px,50px 100%}
+.chart-values{position:absolute;right:9px;top:8px;z-index:3;display:flex;flex-direction:column;gap:60px;color:#9aafbd;font-size:8px;font-weight:800}
+.market-line{position:absolute;inset:0;width:100%;height:100%;z-index:2}
+.chart-path{fill:none;stroke:url(#blueLine);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 3px 4px #22b8d655);stroke-dasharray:12 6;animation:chartDash 2s linear infinite}
+.chart-fill{fill:url(#areaFill);opacity:.8}
+.candles{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:space-around;padding:0 22px 12px;z-index:1}
+.candles i{display:block;position:relative;width:6px;height:var(--h);background:#7bc99c;border-radius:2px;animation:candleMove 2.8s ease-in-out infinite;animation-delay:var(--d)}
+.candles i:before{content:"";position:absolute;left:2px;top:-7px;width:1px;height:calc(100% + 14px);background:#7bc99c}
+.candles i.down{background:#f19b9b}
+.candles i.down:before{background:#f19b9b}
+
+.market-footer{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  min-width:0;
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:9px;
+  color:#8aa0af;
+  font-weight:800;
+  letter-spacing:1px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.market-footer>span{flex-shrink:0}
+.currency-marquee{flex:1;min-width:0;overflow:hidden;white-space:nowrap}
+.currency-track{display:flex;width:max-content;animation:currencyScroll 45s linear infinite}
+.currency-group{display:flex;align-items:center;flex-shrink:0;gap:18px;padding-right:18px}
+.currency-group span{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;color:var(--blue);white-space:nowrap}
+.currency-marquee:hover .currency-track{animation-play-state:paused}
+
+@keyframes currencyScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes chartDash{to{stroke-dashoffset:-36}}
+@keyframes candleMove{0%,100%{transform:scaleY(.86)}50%{transform:scaleY(1.12)}}
+
+.section{padding:75px 8%;text-align:center}
+.section h2,.panduan-section h2{font-size:clamp(27px,3.5vw,37px);color:var(--navy);letter-spacing:-.8px}
+.section>p,.panduan-section>p{color:var(--muted);margin-top:9px;line-height:1.8}
+.kurs-section{padding:75px 6%;background:linear-gradient(135deg,#effaff,#f8fcff)}
+.kurs-table-wrapper{width:100%;max-width:1100px;margin:auto;overflow-x:auto;background:white;border:1px solid var(--line);border-radius:17px;box-shadow:0 16px 40px rgba(27,91,126,.08)}
+.kurs-table{width:100%;min-width:620px;border-collapse:collapse;text-align:center;color:var(--ink)}
+
+.kurs-table th {
+  background: linear-gradient(
+    125deg,
+    #eaf8ff 0%,
+    #d9f3fb 55%,
+    #f8fff0 100%
+  ) !important;
+  color: #123b63 !important;
+  text-align: center;
+  padding: 19px 14px;
+  font-size: 13px;
+  letter-spacing: .7px;
+  border-bottom: 2px solid #dceaf2;
+}
+
+.kurs-table th:first-child {
+  text-align: left;
+  padding-left: 25px;
+  background: linear-gradient(
+    125deg,
+    #eaf8ff 0%,
+    #d9f3fb 55%,
+    #f8fff0 100%
+  ) !important;
+  color: #123b63 !important;
+}
+.kurs-table th small {
+  opacity: 1 !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+  text-shadow: none !important;
+}
+
+.kurs-table th:nth-child(2) small {
+  color: #559B68 !important; /* KAMI BELI - hijau */
+}
+
+.kurs-table th:nth-child(3) small {
+  color: #B85C5C !important; /* KAMI JUAL - merah */
+}
+
+.kurs-table td{padding:16px 14px;border-bottom:1px solid #edf3f6;font-size:17px;font-weight:750}
+.kurs-table td:first-child{text-align:left;padding-left:25px;white-space:nowrap}
+.kurs-table tbody tr:last-child td{border-bottom:0}
+.kurs-table tbody tr:hover{background:#f7fcff}
+.currency-flag{font-size:22px;margin-right:9px;vertical-align:middle}
+.currency-code{color:var(--navy);font-size:16px;font-weight:900}
+.currency-name{color:#8498a7;font-size:12px;margin-left:7px;font-weight:500}
+.kurs-table td:nth-child(2){color:var(--green);font-size:21px;font-weight:900}
+.kurs-table td:nth-child(3){color:var(--red);font-size:21px;font-weight:900}
+.rate-update{
+  width:100%;
+  max-width:1100px;
+  box-sizing:border-box;
+  padding:17px 22px;
+  margin:20px auto 0;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:13px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+.rate-update-info{display:flex;align-items:center;gap:13px}
+.update-icon{color:var(--blue);font-size:29px}
+.rate-update-info strong{color:var(--navy);font-size:14px}
+.rate-update-info p{color:#8296a5;font-size:11px;margin-top:3px}
+.update-status{color:#4b9b73;font-size:10px;font-weight:900;letter-spacing:1px}
+.status-dot{display:inline-block;width:7px;height:7px;background:#55c889;border-radius:50%;margin-right:6px}
+#waktu-update{text-align:left;color:#8296a5;margin-top:3px;font-size:11px}
+.disclaimer-kurs{max-width:1100px;margin:16px auto 0;padding:15px 19px;background:#f4fbdc;border:1px solid #e4f2b8;color:#63733a;border-radius:11px;font-size:12px;line-height:1.8;text-align:left}
+.disclaimer-kurs strong{color:#48611a}
+
+.section.calculator-section{background:white;padding:78px 7%;text-align:left}
+.calc-heading{max-width:1080px;margin:0 auto}
+.calc-heading .calculator-tag{display:inline-block;margin-bottom:11px;color:var(--blue)}
+.calc-heading h2{font-size:clamp(28px,4vw,39px);color:var(--navy);letter-spacing:-1px}
+.calc-heading p{color:var(--muted);margin-top:9px;font-size:14px}
+.calculator{max-width:1080px;margin:30px auto 0;padding:0;background:white;border:1px solid var(--line);border-top:5px solid var(--cyan);border-radius:18px;overflow:hidden;box-shadow:0 22px 55px rgba(25,82,116,.09);text-align:left}
+.calculator-layout{display:grid;grid-template-columns:1.08fr .92fr}
+.calculator-main{padding:36px}
+.calculator-head{margin:0 0 27px;padding:0;background:none;color:var(--navy)}
+.calculator-head h3{color:var(--navy);font-size:27px;margin:10px 0 6px}
+.calculator-head p{color:var(--muted);font-size:13px}
+.calculator-tag{color:var(--blue);font-size:10px;font-weight:900;letter-spacing:2px}
+.calc-fields{display:grid;grid-template-columns:1fr 1fr;gap:19px 14px}
+.calc-field{min-width:0}
+.calc-field-wide{grid-column:1/-1}
+.calculator label{display:block;margin-bottom:8px;color:#35536c;font-size:11px;font-weight:900;letter-spacing:.5px}
+.calculator select,.calculator input{width:100%;min-height:54px;padding:13px 15px;margin:0;border:1px solid #dce8ef;border-radius:9px;background:#f8fcfe;color:var(--ink);font-size:14px}
+.calculator select:focus,.calculator input:focus{outline:none;border-color:var(--cyan);background:white;box-shadow:0 0 0 4px #22b8d61c}
+.calculator-hint{color:#8b9eaa;font-size:11px;margin-top:7px}
+.calculator button{width:100%;min-height:54px;margin-top:22px;border:0;border-radius:9px;background:linear-gradient(110deg,var(--blue),#159bc4);color:white;font-size:12px;font-weight:900;letter-spacing:.4px;cursor:pointer;transition:.2s}
+.calculator button:hover{transform:translateY(-2px);box-shadow:0 9px 22px #1678b92b}
+.calculator #hasil{margin-top:20px;padding:18px;border:1px solid #cdebdc;border-radius:11px;background:#f0faf5;color:var(--green);text-align:center;line-height:1.9;font-size:14px;font-weight:650;overflow-wrap:anywhere}
+.calculator #hasil:empty{display:none}
+.calculator-side{padding:36px;background:linear-gradient(145deg,#eaf8ff,#dff5fa 65%,#f4fbdc);display:flex;flex-direction:column;justify-content:space-between}
+.calc-side-label{color:var(--blue);font-size:10px;font-weight:900;letter-spacing:2px}
+.calculator-side h3{color:var(--navy);font-size:23px;margin:10px 0 6px}
+.calc-side-desc{color:#627e91;font-size:12px;line-height:1.8}
+.rate-preview-card{margin-top:25px;padding:21px;border:1px solid #d3eaf2;border-radius:13px;background:rgba(255,255,255,.8)}
+.rate-preview-title{color:#668195;font-size:11px;font-weight:800;margin-bottom:16px}
+.rate-preview-values{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.rate-preview-item{padding:14px 11px;background:#f5fbfe;border:1px solid #e3f0f5;border-radius:9px}
+.rate-preview-item small{display:block;color:#8298a7;font-size:10px;margin-bottom:6px}
+.rate-preview-item strong{display:block;color:var(--navy);font-size:clamp(18px,2vw,23px);overflow-wrap:anywhere}
+.rate-preview-item.buy strong{color:var(--green)}
+.rate-preview-item.sell strong{color:var(--red)}
+.calc-side-note{margin-top:21px;padding-top:18px;border-top:1px solid #d3e7ef;color:#718a9a;font-size:11px;line-height:1.8}
+.calc-side-note strong{color:var(--navy)}
+.calc-side-bottom{margin-top:24px;padding:15px;border-radius:10px;background:#eaf6c9;color:#536c22;font-size:11px;line-height:1.8}
+
+.panduan-section{padding:75px 8%;background:#f4fbfe;text-align:center}
+.panduan-section>p{margin-bottom:32px}
+.panduan-container,.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.panduan-card,.feature{padding:27px 22px;background:white;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 28px rgba(29,91,124,.045)}
+.panduan-nomor{width:44px;height:44px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;background:#e7f7fd;color:var(--blue);border:1px solid #ccecf7;border-radius:50%;font-size:18px;font-weight:900}
+.panduan-card h3,.feature h3{color:var(--navy);font-size:16px;margin-bottom:9px}
+.panduan-card p,.feature p{color:var(--muted);font-size:13px;line-height:1.8}
+.panduan-wa{display:inline-block;margin-top:28px;padding:13px 23px;background:var(--lime);color:#294315;text-decoration:none;border-radius:8px;font-size:12px;font-weight:900}
+.features{margin-top:32px}
+.feature{transition:.2s}
+.feature:hover{transform:translateY(-4px);border-color:#bce8f7}
+
+footer{background:linear-gradient(125deg,#eaf8ff 0%,#d9f3fb 55%,#f8fff0 100%);color:#123b63;text-align:center;padding:43px 8% 24px;border-top:1px solid #dceaf2}
+footer h3{font-size:22px;letter-spacing:.3px;color:#123b63}
+.footer-deskripsi{max-width:540px;margin:9px auto 0;color:#647b8f;font-size:13px;line-height:1.8}
+.footer-info{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:29px;text-align:left}
+.footer-info>div{padding:19px;background:rgba(255,255,255,.65);border:1px solid #dceaf2;border-radius:11px}
+.footer-info h4{color:#1678b9;margin-bottom:10px;font-size:13px}
+.footer-info p{color:#536d82;font-size:12px;margin-bottom:6px}
+.footer-info a{display:inline-block;margin-top:7px;padding:9px 14px;background:#25d366;color:white;text-decoration:none;border-radius:7px;font-size:12px;font-weight:800}
+.footer-copy{margin-top:27px;padding-top:19px;border-top:1px solid #dceaf2;font-size:11px;color:#647b8f}
+
+thead th{padding:17px 16px;text-align:center;font-size:13px;font-weight:800;letter-spacing:.6px;color:#17466B;background:#EAF5FB;border-bottom:2px solid #B9DDEA}
+thead th:first-child{text-align:left;background:#EAF5FB}
+thead th.th-buy{color:#168653;background:#EAF8F0;border-bottom-color:#A9DFC2}
+thead th.th-sell{color:#087FA8;background:#E8F7FC;border-bottom-color:#A9DDED}
+thead th small{display:block;margin-top:5px;font-size:10px;font-weight:700;letter-spacing:.5px;color:#52758E}
+thead th.th-buy small{color:#398568}
+thead th.th-sell small{color:#3486A0}
+
+.language-switch{display:flex;align-items:center;gap:4px;padding:4px;margin-left:12px;background:#EAF5FB;border:1px solid #D5EAF3;border-radius:30px;flex-shrink:0}
+.lang-btn{border:0;background:transparent;color:#52758E;font-size:12px;font-weight:800;padding:7px 12px;border-radius:22px;cursor:pointer}
+.lang-btn.active{background:#087FA8;color:#fff}
+.lang-btn:hover{color:#087FA8}
+.lang-btn.active:hover{color:#fff}
+
+.hasil-transaksi{padding:10px;border:1px solid #dce5ed;border-radius:9px;background:#fff;color:#18324b;font-size:12px}
+.hasil-judul{font-weight:700;margin-bottom:4px}
+.hasil-perhitungan{font-weight:600;font-size:13px;margin-bottom:8px}
+.tabel-hasil{width:100%;border-collapse:collapse;font-size:12px}
+.tabel-hasil th{background:#edf3f8;color:#53677a;font-size:10px;text-align:left;padding:7px 9px}
+.tabel-hasil th:last-child,.tabel-hasil td:last-child{text-align:right}
+.tabel-hasil td{padding:7px 9px;border-bottom:1px solid #edf0f3}
+.tabel-hasil td:first-child{color:#68798a}
+.tabel-hasil td:last-child{font-weight:600}
+.tabel-hasil .baris-total td{background:#f0f8f4;color:#087b54;font-weight:700;border-bottom:none}
+
+@media(max-width:850px){
+  header{padding:13px 5%;flex-direction:column;gap:12px}
+  nav{justify-content:center;gap:16px}
+  .hero{grid-template-columns:1fr;text-align:center;padding:58px 6%;gap:30px}
+  .hero-content{margin:auto}
+  .hero-description{margin:auto}
+  .hero-actions{justify-content:center}
+  .market-visual{max-width:590px}
+  .section,.panduan-section{padding:55px 6%}
+  .footer-info{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .calculator-layout{grid-template-columns:1fr}
+  .calculator-main,.calculator-side{padding:25px 21px}
+  .calc-fields{grid-template-columns:1fr;gap:16px}
+  .calc-field-wide{grid-column:auto}
+  .section.calculator-section{padding:52px 5%}
+  .panduan-container,.features{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .logo{font-size:20px}
+  nav{gap:11px}
+  nav a{font-size:11px}
+  nav .tombol-wa{padding:8px 12px}
+  .hero{padding:48px 5%}
+  .hero h1{font-size:35px;letter-spacing:-1.5px}
+  .hero-description{font-size:13px}
+  .hero-actions{flex-direction:column}
+  .hero button,.hero-contact{width:100%}
+  .hero-benefits{gap:12px}
+  .hero-benefit{gap:7px;padding-right:10px;font-size:10px}
+  .benefit-icon{width:30px;height:30px}
+  .benefit-icon svg{width:17px;height:17px}
+  .benefit-icon.icon-3d{
+  width:38px;
+  height:38px;
+}
+.hero-benefits{
+  width:100%;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:12px;
+}
+
+.hero-benefit{
+  border-right:none;
+  padding:6px 2px;
+}
+.hero {
+  background-size: contain !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+}
+
+.benefit-copy strong{
+  font-size:10px;
+  white-space:normal;
+}
+
+.benefit-icon.icon-3d svg{
+  width:34px;
+  height:34px;
+}
+
+  .market-visual{padding:19px}
+  .market-heading h3{font-size:18px}
+  .market-status{font-size:8px}
+  .chart-area{height:185px}
+  .market-footer{gap:10px}
+  .market-footer>span{font-size:8px}
+  .currency-group{gap:13px}
+  .currency-group span{font-size:10px}
+  .kurs-section{padding:52px 4%}
+  .kurs-heading{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  max-width:1100px;
+  margin:0 auto 25px;
+  text-align:center !important;
+  box-sizing:border-box;
+}
+  .kurs-table th{padding:15px 9px;font-size:11px}
+  .kurs-table td{padding:13px 9px}
+  .kurs-table td:first-child{padding-left:13px}
+  .currency-name{display:block;margin-left:32px;margin-top:2px;font-size:10px}
+  .kurs-table td:nth-child(2),.kurs-table td:nth-child(3){font-size:18px}
+  .rate-update{align-items:flex-start;flex-direction:column;padding:15px}
+  .rate-preview-values{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+.currency-ticker{
+  width:145px;
+  overflow:hidden;
+  white-space:nowrap;
+  margin-top:5px;
+}
+
+.currency-track{
+  display:flex;
+  width:max-content;
+  animation:currencyMove 22s linear infinite;
+}
+
+.currency-track span{
+  display:block;
+  flex-shrink:0;
+  font-size:9px;
+  font-weight:700;
+  color:#0786ad;
+}
+
+@keyframes currencyMove{
+  from{transform:translateX(-50%)}
+  to{transform:translateX(0)}
+}
+
+.hero-benefits{
+display:block;
+ width:fit-content;
+max-width:calc(100vw - 30px);
+ margin:30px 0 0;
+ padding:16px 20px; 
+  border-radius:18px;
+  background:rgba(255,255,255,.90);
+  border:1px solid rgba(150,210,230,.55);
+  box-shadow:0 8px 25px rgba(0,80,120,.10);
+  backdrop-filter:blur(10px);
+  transform:translateY(25px);
+}
+
+.hero-benefit-list{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:center;
+}
+
+.hero-benefit{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-width:0;
+  padding:5px 8px;
+  border-right:1px solid #d4e8ef;
+  text-align:center;
+}
+
+.hero-benefit:last-child{
+  border-right:none;
+}
+
+.hero-benefit strong{
+  font-size:11px;
+  line-height:1.3;
+  color:#075779;
+  white-space:nowrap;
+}
+
+.hero-benefit .benefit-icon{
+  margin:0;
+}
+
+
+.currency-row{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  width:fit-content;
+  min-width:420px;
+  max-width:100%;
+  border:1px solid #d4e8ef;
+  border-radius:10px;
+  margin-top:8px;
+  padding:6px 10px;
+  box-sizing:border-box;
+  overflow:hidden;
+  background:transparent;
+  transform:translateY(-75px);
+  position: relative;
+  left: -20px;
+}
+
+.currency-row strong{
+  flex-shrink:0;
+  font-size:10px;
+  color:#ffffff;
+  white-space:nowrap;
+}
+
+.flag-ticker{
+  width:300px;
+  flex:0 0 300px;
+  min-width:0;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.flag-track{
+  display:flex;
+  width:max-content;
+  animation:flagMoveRight 25s linear infinite;
+}
+
+.flag-track span{
+  flex-shrink:0;
+  font-size:19px;
+  letter-spacing:5px;
+}
+
+@keyframes flagMoveRight{
+  from{transform:translateX(-50%)}
+  to{transform:translateX(0)}
+}
+
+@media(max-width:560px){
+  .hero-benefits{
+    width:100%;
+    padding:12px 8px;
+  }
+  .hero-benefit{
+    padding:5px 3px;
+  }
+  .hero-benefit strong{
+    font-size:8px;
+    white-space:normal;
+  }
+  .hero-benefit .benefit-icon svg{
+    width:34px;
+    height:34px;
+  }
+  .currency-row{
+    gap:8px;
+  }
+  .currency-row strong{
+    font-size:8px;
+  }
+}
+
+
+  .hero-benefit{
+    padding:5px 2px;
+  }
+
+  .hero-benefit strong{
+    font-size:8px;
+    white-space:normal;
+  }
+
+  .hero-benefit .benefit-icon svg{
+    width:34px;
+    height:34px;
+  }
+
+  .currency-row{
+    gap:8px;
+  }
+
+  
+
+/* 4 ICON KEUNGGULAN */
+.hero-trust {
+  width: min(900px, calc(100% - 32px));
+  margin: 25px auto 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  align-items: center;
+  justify-items: center;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  text-align: center;
+  color: #173b59;
+}
+
+.trust-item span {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+}
+
+.trust-item strong {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 600px) {
+  .hero-trust {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 12px;
+    margin: 22px auto 30px;
+  }
+}
+/* 4 ICON KEUNGGULAN */
+.hero-trust {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  width: min(900px, calc(100% - 40px));
+  margin: 15px auto 25px;
+  padding: 18px 20px;
+  position: relative;
+  z-index: 5;
+
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 10px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(30,100,140,0.12);
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(20,60,90,0.07);
+}
+
+.trust-item span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  font-size: 25px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #eaf5ff 0%, #dceeff 50%, #cfe7fa 100%);
+  box-shadow:
+    0 5px 0 #b8ccdc,
+    0 8px 14px rgba(20, 60, 90, 0.20),
+    inset 0 2px 4px rgba(255,255,255,0.95);
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.12));
+  transform: translateY(-2px);
+}
+
+.trust-item strong {
+  font-size: 12px;
+  font-weight: 700;
+  color: #173b55;
+  letter-spacing: 0.4px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+  .hero-trust {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px 5px;
+  }
+
+  .trust-item {
+    padding: 13px 5px;
+    gap: 7px;
+  }
+
+  .trust-item span {
+    font-size: 19px;
+  }
+
+  .trust-item strong {
+    font-size: 10px;
+  }
+}
+/* ICON SVG MODERN ALDI'E$ CHANGER */
+.trust-item .trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  filter: none;
+  transform: none;
+}
+
+.trust-item .trust-icon svg {
+  width: 48px;
+  height: 48px;
+  display: block;
+  overflow: visible;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+  .trust-item .trust-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .trust-item .trust-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+}
+/* BACKGROUND PREMIUM 4 ICON ALDIE$ */
+.hero-trust {
+  background:
+    radial-gradient(circle at 5% 15%,
+      rgba(32, 157, 255, .13), transparent 30%),
+    radial-gradient(circle at 95% 85%,
+      rgba(0, 205, 220, .12), transparent 32%),
+    linear-gradient(
+      120deg,
+      #eaf5ff 0%,
+      #f5faff 45%,
+      #e8f7fc 100%
+    );
+
+  border: 1px solid rgba(35, 139, 210, .12);
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(30, 100, 160, .08);
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* ORNAMEN CAHAYA */
+.hero-trust::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(37, 153, 255, .07);
+  top: -110px;
+  left: -55px;
+  z-index: -1;
+}
+
+.hero-trust::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(0, 190, 210, .07);
+  bottom: -145px;
+  right: -55px;
+  z-index: -1;
+}
+
+/* KARTU IKON */
+.hero-trust .trust-item {
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(255, 255, 255, .95);
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(25, 95, 150, .07);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.hero-trust .trust-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(25, 95, 150, .13);
+}
+#daftar-kurs .kurs-heading {
+  width: min(1100px, 100%);
+  margin: 0 auto 32px !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#daftar-kurs .kurs-heading span {
+  color: #159b68;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 8px 18px;
+  border: 1px solid rgba(21,155,104,.25);
+  border-radius: 30px;
+  background: #eaf8f1;
+  margin-bottom: 14px;
+}
+
+#daftar-kurs .kurs-heading h2 {
+  color: #174A70;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+#daftar-kurs .kurs-heading p {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ALDI'E<span>$</span> CHANGER</div>
+  <nav aria-label="Navigasi utama">
+    <a href="#home">Beranda</a>
+    <a href="#daftar-kurs">Kurs</a>
+    <a href="#kalkulator">Kalkulator</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#kontak">Kontak</a>
+    <div class="language-switch">
+      <button type="button" class="lang-btn active" data-lang="id">ID</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <h1>Your Trusted<br><span>Money Changer</span></h1>
+    
+    <p class="hero-description" id="hero-description"
+   data-id="Solusi terbaik untuk transaksi valuta asing Anda, dengan kurs kompetitif, aman dan profesional."
+   data-en="The best solution for your foreign currency exchange needs, offering competitive rates, security, and professionalism.">
+  Solusi terbaik untuk transaksi valuta asing Anda, dengan kurs kompetitif, aman dan profesional.
+</p>
+
+    <div class="hero-actions">
+      <button type="button" onclick="lihatKurs()">LIHAT KURS SEKARANG →</button>
+      <a class="hero-contact" href="#panduan"
+   data-id="PANDUAN TRANSAKSI →"
+   data-en="TRANSACTION GUIDE →">PANDUAN TRANSAKSI →</a>
+      <div class="icon-4d">
+  <svg viewBox="0 0 100 100" fill="none">
+    <path d="M50 8L88 29V71L50 92L12 71V29L50 8Z"
+      fill="url(#cubeGradient)" stroke="#36BFA5" stroke-width="3"/>
+    <path d="M50 8V50L88 29M50 50L12 29M50 50V92"
+      stroke="white" stroke-width="3"/>
+    <text x="50" y="67" text-anchor="middle"
+      font-size="22" font-weight="800" fill="white">4D</text>
+    <defs>
+      <linearGradient id="cubeGradient" x1="12" y1="8" x2="88" y2="92">
+        <stop stop-color="#75DDF0"/>
+        <stop offset="1" stop-color="#16A887"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+    
+<div class="hero-benefits">
+
+  <div class="currency-row">
+  <strong data-id="TERSEDIA 30+ MATA UANG :" data-en="30+ CURRENCIES AVAILABLE:">
+  TERSEDIA 30+ MATA UANG :
+</strong>
+
+  <div class="flag-ticker">
+    <div class="flag-track">
+      <span>🇺🇸 🇪🇺 🇬🇧 🇸🇬 🇦🇺 🇯🇵 🇨🇳 🇲🇾 🇸🇦 🇦🇪 🇭🇰 🇨🇭 🇨🇦 🇳🇿 🇰🇷 🇹🇭 🇵🇭 🇮🇳 🇧🇳 🇹🇼 🇻🇳 🇹🇷 🇸🇪 🇳🇴 🇩🇰 🇿🇦 🇰🇼 🇶🇦 🇧🇭</span>
+      <span>🇺🇸 🇪🇺 🇬🇧 🇸🇬 🇦🇺 🇯🇵 🇨🇳 🇲🇾 🇸🇦 🇦🇪 🇭🇰 🇨🇭 🇨🇦 🇳🇿 🇰🇷 🇹🇭 🇵🇭 🇮🇳 🇧🇳 🇹🇼 🇻🇳 🇹🇷 🇸🇪 🇳🇴 🇩🇰 🇿🇦 🇶🇦 🇧🇭</span>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- 4 ICON KEUNGGULAN -->
+
+<section class="kurs-section" id="daftar-kurs">
+  <div class="kurs-heading">
+  <span data-id="KURS VALUTA ASING" data-en="EXCHANGE RATE">EXCHANGE RATE</span>
+  <h2 data-id="Kurs Valuta Asing" data-en="Foreign Exchange Rates">Kurs Valuta Asing</h2>
+  <p data-id="Informasi kurs beli dan jual mata uang asing" data-en="Foreign currency buying and selling rates">Informasi kurs beli dan jual mata uang asing</p>
+</div>
+
+  <div class="kurs-table-wrapper">
+    <table class="kurs-table">
+      <thead>
+        <tr>
+          <th class="th-currency">MATA UANG</th>
+          <th class="th-buy">BUY<small>KAMI BELI</small></th>
+          <th class="th-sell">SELL<small>KAMI JUAL</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="currency-flag">🇺🇸</span><strong class="currency-code">USD</strong><span class="currency-name">US Dollar</span></td><td><span id="buy-USD">18.205</span></td><td><span id="sell-USD">18.300</span></td></tr>
+        <tr><td><span class="currency-flag">🇸🇬</span><strong class="currency-code">SGD</strong><span class="currency-name">Singapore Dollar</span></td><td><span id="buy-SGD">14.180</span></td><td><span id="sell-SGD">14.235</span></td></tr>
+        <tr><td><span class="currency-flag">🇲🇾</span><strong class="currency-code">MYR</strong><span class="currency-name">Malaysian Ringgit</span></td><td><span id="buy-MYR">4.415</span></td><td><span id="sell-MYR">4.480</span></td></tr>
+        <tr><td><span class="currency-flag">🇦🇺</span><strong class="currency-code">AUD</strong><span class="currency-name">Australian Dollar</span></td><td><span id="buy-AUD">12.350</span></td><td><span id="sell-AUD">12.480</span></td></tr>
+        <tr><td><span class="currency-flag">🇪🇺</span><strong class="currency-code">EUR</strong><span class="currency-name">Euro</span></td><td><span id="buy-EUR">20.155</span></td><td><span id="sell-EUR">20.245</span></td></tr>
+        <tr><td><span class="currency-flag">🇯🇵</span><strong class="currency-code">JPY</strong><span class="currency-name">Japanese Yen</span></td><td><span id="buy-JPY">110</span></td><td><span id="sell-JPY">115</span></td></tr>
+        <tr><td><span class="currency-flag">🇭🇰</span><strong class="currency-code">HKD</strong><span class="currency-name">Hong Kong Dollar</span></td><td><span id="buy-HKD">2.300</span></td><td><span id="sell-HKD">2.350</span></td></tr>
+        <tr><td><span class="currency-flag">🇨🇳</span><strong class="currency-code">CNY</strong><span class="currency-name">Chinese Yuan</span></td><td><span id="buy-CNY">2.500</span></td><td><span id="sell-CNY">2.550</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rate-update">
+    <div class="rate-update-info">
+      <span class="update-icon">◷</span>
+      <div>
+        <strong>Informasi Update Kurs</strong>
+        <p>Kurs pada halaman ini merupakan referensi yang ditampilkan.</p>
+        <p id="waktu-update">Terakhir diperbarui: --</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="disclaimer-kurs">
+    <strong>ⓘ Informasi Kurs:</strong>
+    Kurs di website merupakan informasi indikatif dan dapat berubah sewaktu-waktu. Konfirmasikan kurs terbaru kepada petugas sebelum transaksi.
+  </div>
+</section>
+
+<section class="section calculator-section" id="kalkulator">
+  <div class="calc-heading">
+    <span class="calculator-tag">ALDI'E$ EXCHANGE TOOL</span>
+    <h2>Kalkulator Valuta Asing</h2>
+    <p>Hitung estimasi transaksi valuta asing dengan cepat dan praktis.</p>
+  </div>
+
+  <div class="calculator">
+    <div class="calculator-layout">
+      <div class="calculator-main">
+        <div class="calculator-head">
+          <span class="calculator-tag">01 / TRANSACTION CALCULATOR</span>
+          <h3>Hitung Transaksi</h3>
+          <p>Masukkan detail transaksi untuk melihat estimasi nilai Rupiah.</p>
+        </div>
+
+        <div class="calc-fields">
+          <div class="calc-field">
+            <label for="mataUang">PILIH MATA UANG</label>
+            <select id="mataUang">
+              <option value="USD">🇺🇸 USD — US Dollar</option>
+              <option value="SGD">🇸🇬 SGD — Singapore Dollar</option>
+              <option value="MYR">🇲🇾 MYR — Malaysian Ringgit</option>
+              <option value="AUD">🇦🇺 AUD — Australian Dollar</option>
+              <option value="EUR">🇪🇺 EUR — Euro</option>
+              <option value="JPY">🇯🇵 JPY — Japanese Yen</option>
+              <option value="HKD">🇭🇰 HKD — Hong Kong Dollar</option>
+              <option value="CNY">🇨🇳 CNY — Chinese Yuan</option>
+            </select>
+          </div>
+
+          <div class="calc-field">
+            <label for="jenisTransaksi">JENIS TRANSAKSI</label>
+            <select id="jenisTransaksi">
+              <option value="sell">Saya Membeli Valas</option>
+              <option value="buy">Saya Menjual Valas</option>
+            </select>
+          </div>
+
+          <div class="calc-field calc-field-wide">
+            <label for="jumlahValas">JUMLAH VALAS</label>
+            <input type="text" id="jumlahValas" placeholder="Contoh: 1000" inputmode="numeric" autocomplete="off">
+            <p class="calculator-hint">Masukkan nominal dalam mata uang asing.</p>
+          </div>
+        </div>
+
+        <button type="button" onclick="hitungValas()">HITUNG ESTIMASI TRANSAKSI →</button>
+        <div id="hasil" aria-live="polite"></div>
+      </div>
+
+      <aside class="calculator-side">
+        <div>
+          <span class="calc-side-label">RATE REFERENCE</span>
+          <h3>Informasi Kurs</h3>
+          <p class="calc-side-desc">Lihat referensi kurs beli dan jual mata uang yang sedang kamu pilih.</p>
+
+          <div class="rate-preview-card">
+            <div class="rate-preview-title">KURS <span id="preview-currency">USD</span> / IDR</div>
+            <div class="rate-preview-values">
+              <div class="rate-preview-item buy">
+                <small>KURS BELI</small>
+                <strong id="preview-buy">—</strong>
+              </div>
+              <div class="rate-preview-item sell">
+                <small>KURS JUAL</small>
+                <strong id="preview-sell">—</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-side-note">
+            <strong>Perlu diperhatikan</strong><br>
+            Hasil kalkulator merupakan estimasi. Kurs final, kondisi uang, pecahan, dan ketersediaan stok perlu dikonfirmasi kepada petugas.
+          </div>
+        </div>
+
+        <div class="calc-side-bottom"
+     data-id="✦ Gunakan kalkulator sebagai referensi awal sebelum melakukan transaksi valuta asing."
+     data-en="✦ Use the calculator as an initial reference before conducting foreign currency transactions.">
+  ✦ Gunakan kalkulator sebagai referensi awal sebelum melakukan transaksi valuta asing.
+</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="panduan-section" id="panduan">
+<h2>Panduan Transaksi</h2>
+<p>Proses penukaran valuta asing dengan mudah dan praktis.</p>
+
+<div class="panduan-container">
+
+  <!-- STEP 1 -->
+  <div class="panduan-card">
+  <span class="panduan-number">1</span>
+  <div class="panduan-icon">
+    <svg viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="moneyStep" x1="15" y1="10" x2="85" y2="90">
+          <stop stop-color="#8CE7FF"/>
+          <stop offset="1" stop-color="#1682B8"/>
+        </linearGradient>
+      </defs>
+      <rect x="13" y="25" width="74" height="50" rx="10"
+        fill="url(#moneyStep)" stroke="#176BA8" stroke-width="3"/>
+      <rect x="23" y="34" width="54" height="32" rx="5"
+        stroke="white" stroke-width="2.5"/>
+      <circle cx="50" cy="50" r="11" fill="#D9FFF0"/>
+      <path d="M50 42V58M55 45C53 42 44 42 44 47C44 52 56 49 56 54C56 59 47 60 44 56"
+        stroke="#1682B8" stroke-width="2.8" stroke-linecap="round"/>
+      <path d="M18 18H45" stroke="#42C99A" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h3 data-id="Pilih Mata Uang" data-en="Choose Your Currency">Pilih Mata Uang</h3>
+  <p data-id="Tentukan mata uang asing yang ingin dibeli atau dijual melalui daftar kurs kami."
+     data-en="Choose the foreign currency you wish to buy or sell from our exchange rate list.">
+    Tentukan mata uang asing yang ingin dibeli atau dijual melalui daftar kurs kami.
+  </p>
+</div>
+
+<!-- STEP 2 -->
+
+<!-- STEP 2 -->
+<div class="panduan-card">
+  <span class="panduan-number">2</span>
+  <div class="panduan-icon">
+    <svg viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="chatStep" x1="15" y1="10" x2="85" y2="90">
+          <stop stop-color="#8CE7FF"/>
+          <stop offset="1" stop-color="#1682B8"/>
+        </linearGradient>
+      </defs>
+      <rect x="20" y="12" width="60" height="76" rx="12"
+        fill="url(#chatStep)" stroke="#176BA8" stroke-width="3"/>
+      <rect x="27" y="21" width="46" height="55" rx="5" fill="#F1FCFF"/>
+      <path d="M35 36H65M35 45H59" stroke="#1682B8" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M35 56L44 64L64 49"
+        stroke="#20B982" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="50" cy="82" r="2.5" fill="white"/>
+    </svg>
+  </div>
+  <h3 data-id="Konfirmasi Kurs" data-en="Confirm the Exchange Rate">Konfirmasi Kurs</h3>
+  <p data-id="Hubungi petugas melalui WhatsApp untuk memastikan ketersediaan valas dan kurs transaksi."
+     data-en="Contact our staff via WhatsApp to confirm currency availability and the exchange rate.">
+    Hubungi petugas melalui WhatsApp untuk memastikan ketersediaan valas dan kurs transaksi.
+  </p>
+</div>
+
+<!-- STEP 3 -->
+<div class="panduan-card">
+  <span class="panduan-number">3</span>
+  <div class="panduan-icon">
+    <svg viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="identityStep" x1="10" y1="10" x2="90" y2="90">
+          <stop stop-color="#8CE7FF"/>
+          <stop offset="1" stop-color="#1682B8"/>
+        </linearGradient>
+      </defs>
+      <rect x="10" y="21" width="80" height="58" rx="10"
+        fill="url(#identityStep)" stroke="#176BA8" stroke-width="3"/>
+      <rect x="16" y="27" width="68" height="46" rx="6" fill="#F1FCFF"/>
+      <circle cx="34" cy="45" r="9" fill="#1682B8"/>
+      <path d="M21 65C22 56 27 53 34 53C41 53 46 56 47 65" fill="#20B982"/>
+      <path d="M54 41H75M54 50H75M54 59H69"
+        stroke="#1682B8" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h3 data-id="Persiapkan Identitas" data-en="Prepare Your Identification">Persiapkan Identitas</h3>
+  <p data-id="Siapkan dokumen identitas resmi yang masih berlaku, seperti KTP, SIM, Paspor, KITAS, atau KITAP untuk keperluan verifikasi transaksi."
+     data-en="Prepare a valid official identification document, such as an ID card, driver's license, passport, KITAS, or KITAP for transaction verification.">
+    Siapkan dokumen identitas resmi yang masih berlaku, seperti KTP, SIM, Paspor, KITAS, atau KITAP untuk keperluan verifikasi transaksi.
+  </p>
+</div>
+
+<!-- STEP 4 -->
+<div class="panduan-card">
+  <span class="panduan-number">4</span>
+  <div class="panduan-icon">
+    <svg viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="paymentStep" x1="10" y1="10" x2="90" y2="90">
+          <stop stop-color="#8CE7FF"/>
+          <stop offset="1" stop-color="#1682B8"/>
+        </linearGradient>
+      </defs>
+      <rect x="12" y="25" width="76" height="53" rx="9"
+        fill="url(#paymentStep)" stroke="#176BA8" stroke-width="3"/>
+      <path d="M12 38H88" stroke="white" stroke-width="5"/>
+      <rect x="54" y="47" width="34" height="21" rx="6"
+        fill="#F1FCFF" stroke="#176BA8" stroke-width="2"/>
+      <circle cx="66" cy="57" r="4" fill="#20B982"/>
+      <path d="M23 57H42" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h3 data-id="Tentukan Metode Pembayaran" data-en="Choose Your Payment Method">Tentukan Metode Pembayaran</h3>
+  <p data-id="Pilih metode pembayaran yang tersedia, baik secara tunai maupun transfer bank sesuai dengan kesepakatan dan arahan petugas kami."
+     data-en="Choose an available payment method, either cash or bank transfer, as agreed with and instructed by our staff.">
+    Pilih metode pembayaran yang tersedia, baik secara tunai maupun transfer bank sesuai dengan kesepakatan dan arahan petugas kami.
+  </p>
+</div>
+
+<!-- STEP 5 -->
+<div class="panduan-card">
+  <span class="panduan-number">5</span>
+  <div class="panduan-icon">
+    <svg viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="secureStep" x1="15" y1="10" x2="85" y2="90">
+          <stop stop-color="#8CE7FF"/>
+          <stop offset="1" stop-color="#1682B8"/>
+        </linearGradient>
+      </defs>
+      <path d="M50 10L82 22V45C82 66 69 81 50 91C31 81 18 66 18 45V22L50 10Z"
+        fill="url(#secureStep)" stroke="#176BA8" stroke-width="3"/>
+      <path d="M34 50L45 61L67 38"
+        stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M50 18L75 27" stroke="#D9FFF0" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h3 data-id="Selesaikan Transaksi" data-en="Complete Your Transaction">Selesaikan Transaksi</h3>
+  <p data-id="Setelah kurs dan nominal disepakati, lakukan pembayaran sesuai instruksi petugas. Valuta asing akan diserahkan setelah transaksi selesai dan diverifikasi."
+     data-en="Once the exchange rate and amount are agreed upon, complete payment as instructed by our staff. Foreign currency will be handed over after the transaction is completed and verified.">
+    Setelah kurs dan nominal disepakati, lakukan pembayaran sesuai instruksi petugas. Valuta asing akan diserahkan setelah transaksi selesai dan diverifikasi.
+  </p>
+</div>
+
+</div>
+
+<!-- INFORMASI PENTING -->
+<div class="panduan-info">
+  <h3 data-id="INFORMASI PENTING" data-en="IMPORTANT INFORMATION">INFORMASI PENTING</h3>
+  <h4 data-id="Ketentuan Pembelian Valuta Asing"
+      data-en="Foreign Currency Purchase Requirements">
+    Ketentuan Pembelian Valuta Asing
+  </h4>
+  <p data-id="Untuk transaksi tunai pembelian valuta asing terhadap Rupiah tanpa dokumen Underlying Transaksi, berlaku batas maksimal sebesar ekuivalen USD 10.000 per bulan per pelaku transaksi Pasar Valuta Asing sesuai ketentuan Bank Indonesia."
+     data-en="For cash purchases of foreign currency against Rupiah without Underlying Transaction documents, a maximum limit equivalent to USD 10,000 per month per Foreign Exchange Market participant applies, in accordance with Bank Indonesia regulations.">
+    Untuk transaksi tunai pembelian valuta asing terhadap Rupiah tanpa dokumen Underlying Transaksi, berlaku batas maksimal sebesar ekuivalen USD 10.000 per bulan per pelaku transaksi Pasar Valuta Asing sesuai ketentuan Bank Indonesia.
+  </p>
+  <p data-id="Apabila pembelian melebihi batas tersebut, nasabah wajib melengkapi dokumen Underlying Transaksi sesuai ketentuan Bank Indonesia yang berlaku."
+     data-en="If the purchase exceeds this limit, customers must provide the required Underlying Transaction documents in accordance with applicable Bank Indonesia regulations.">
+    Apabila pembelian melebihi batas tersebut, nasabah wajib melengkapi dokumen Underlying Transaksi sesuai ketentuan Bank Indonesia yang berlaku.
+  </p>
+</div>
+
+<a class="panduan-wa" href="https://wa.me/6285156148341"
+   target="_blank" rel="noopener noreferrer"
+   data-id="HUBUNGI PETUGAS →"
+   data-en="CONTACT OUR STAFF →">
+  HUBUNGI PETUGAS →
+</a>
+</section>
+
+
+<section class="section" id="layanan">
+  <span class="eyebrow">OUR SERVICE</span>
+  <h2 style="margin-top:14px">Layanan Kami</h2>
+  <p>Kenyamanan dan kepercayaan dalam setiap transaksi.</p>
+
+  
+<div class="features">
+
+  <!-- 1. KURS KOMPETITIF -->
+  <div class="feature">
+    <div class="service-icon">
+  <svg viewBox="0 0 100 100" fill="none">
+    <defs>
+      <linearGradient id="kursChartNew" x1="15" y1="10" x2="85" y2="90">
+        <stop offset="0%" stop-color="#70D5FF"/>
+        <stop offset="100%" stop-color="#176BA8"/>
+      </linearGradient>
+    </defs>
+
+    <rect x="12" y="13" width="76" height="74" rx="16"
+          fill="url(#kursChartNew)"/>
+
+    <path d="M25 70L42 53L54 61L76 34"
+          stroke="white" stroke-width="5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M62 34H76V48"
+          stroke="white" stroke-width="5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M25 78H76"
+          stroke="#D8F3FF" stroke-width="3"
+          stroke-linecap="round"/>
+  </svg>
+</div> <h3>Kurs Kompetitif</h3>
+    <p>Informasi kurs yang transparan sebagai referensi sebelum transaksi.</p>
+  </div>
+
+  <!-- 2. PELAYANAN PROFESIONAL -->
+  <div class="feature">
+    <div class="service-icon">
+      <svg viewBox="0 0 100 100" fill="none">
+        <defs>
+          <linearGradient id="headset" x1="20" y1="15" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#70D5FF"/>
+            <stop offset="1" stop-color="#176BA8"/>
+          </linearGradient>
+        </defs>
+        <path d="M19 52V45C19 27 33 13 50 13C67 13 81 27 81 45V52" stroke="url(#headset)" stroke-width="11" stroke-linecap="round"/>
+        <rect x="13" y="44" width="20" height="30" rx="9" fill="#238BC5"/>
+        <rect x="67" y="44" width="20" height="30" rx="9" fill="#238BC5"/>
+        <path d="M77 73C74 84 65 87 53 87H45" stroke="#176BA8" stroke-width="6" stroke-linecap="round"/>
+        <rect x="35" y="79" width="19" height="12" rx="6" fill="#70D5FF"/>
+        <circle cx="50" cy="43" r="7" fill="white"/>
+      </svg>
+    </div>
+    <h3>Pelayanan Profesional</h3>
+    <p>Pelayanan yang mengutamakan kebutuhan dan kenyamanan pelanggan.</p>
+  </div>
+
+  <!-- 3. TRANSAKSI AMAN -->
+  <div class="feature">
+    <div class="service-icon">
+      <svg viewBox="0 0 100 100" fill="none">
+        <defs>
+          <linearGradient id="shield" x1="20" y1="10" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#75D9FF"/>
+            <stop offset="1" stop-color="#176BA8"/>
+          </linearGradient>
+        </defs>
+        <path d="M50 10L82 23V47C82 68 68 82 50 91C32 82 18 68 18 47V23L50 10Z" fill="url(#shield)" stroke="#155C91" stroke-width="3"/>
+        <rect x="35" y="43" width="30" height="24" rx="5" fill="white"/>
+        <path d="M41 43V35C41 24 59 24 59 35V43" stroke="white" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="50" cy="54" r="3" fill="#176BA8"/>
+        <path d="M50 57V61" stroke="#176BA8" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h3>Transaksi Aman</h3>
+    <p>Proses transaksi dengan konfirmasi dan prosedur yang sesuai.</p>
+  </div>
+
+  <!-- 4. DELIVERY SERVICE -->
+  <div class="feature">
+  <div class="service-icon">
+    <svg viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="delivery" x1="15" y1="20" x2="85" y2="85" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#78D8FF"/>
+          <stop offset="1" stop-color="#176BA8"/>
+        </linearGradient>
+      </defs>
+      <path d="M10 31H57V68H10V31Z" fill="url(#delivery)" stroke="#176BA8" stroke-width="3"/>
+      <path d="M57 43H72L88 57V68H57V43Z" fill="#36B5D9" stroke="#176BA8" stroke-width="3"/>
+      <path d="M65 47H72L82 57H65V47Z" fill="#DFF7FF"/>
+      <circle cx="29" cy="70" r="10" fill="#174A70" stroke="white" stroke-width="4"/>
+      <circle cx="74" cy="70" r="10" fill="#174A70" stroke="white" stroke-width="4"/>
+      <path d="M24 42H44M24 50H39" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <rect x="36" y="15" width="25" height="19" rx="3" fill="#159B68"/>
+      <path d="M48 19V29M43 24H53" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <h3 data-id="Delivery Service" data-en="Delivery Service">Delivery Service</h3>
+
+  <p
+    data-id="Valuta asing, kini lebih dekat. Nikmati kemudahan layanan pengantaran valuta asing langsung ke lokasi Anda melalui kurir profesional, dengan mengutamakan keamanan, kenyamanan, dan kerahasiaan transaksi."
+    data-en="Foreign currency, now closer to you. Enjoy the convenience of having foreign currency delivered directly to your location by our professional couriers, with security, comfort, and transaction confidentiality as our top priorities."
+  >Valuta asing, kini lebih dekat. Nikmati kemudahan layanan pengantaran valuta asing langsung ke lokasi Anda melalui kurir profesional, dengan mengutamakan keamanan, kenyamanan, dan kerahasiaan transaksi.</p>
+</div>
+</div>
+
+  </div>
+</section>
+
+<section class="section" id="tentang" style="background:#eff9fd">
+  <span class="eyebrow">ABOUT ALDI'E$ CHANGER</span>
+  <h2 style="margin-top:14px">Tentang Kami</h2>
+  <p style="max-width:760px;margin:12px auto 0">
+    ALDI'E$ CHANGER menyediakan informasi valuta asing dan sarana kalkulator estimasi transaksi untuk membantu pelanggan memperoleh gambaran nilai penukaran. Hubungi petugas kami untuk konfirmasi kurs, ketersediaan mata uang, dan detail transaksi.
+  </p>
+</section>
+
+<footer id="kontak">
+  <h3>ALDI'E$ CHANGER</h3>
+  <p class="footer-deskripsi"
+   data-id="Layanan penukaran valuta asing dengan pelayanan profesional dan informasi kurs yang transparan."
+   data-en="Foreign exchange services with professional assistance and transparent exchange rate information.">
+  Layanan penukaran valuta asing dengan pelayanan profesional dan informasi kurs yang transparan.
+</p>
+
+  <div class="footer-info">
+    <div>
+      <h4>Alamat</h4>
+      <p>Jakarta, Indonesia</p>
+    </div>
+    <div>
+      <h4>Jam Operasional</h4>
+      <p>Senin - Sabtu</p>
+      <p>09.00 - 17.00 WIB</p>
+    </div>
+    <div>
+      <h4>Hubungi Kami</h4>
+      <p>WhatsApp: 085156148341</p>
+      <a href="https://wa.me/6285156148341" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a>
+    </div>
+  </div>
+
+  <p class="footer-copy">© 2026 ALDI'E$ CHANGER. All Rights Reserved.</p>
+</footer>
+
+<script src="./script.js"></script>
+
+<style>
+@media screen and (max-width: 600px) {
+  .kurs-table-wrapper {
+    overflow-x: hidden !important;
+    width: 100%;
+  }
+  .hero-trust {
+  width: calc(100% - 300px) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+
+  .kurs-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed;
+  }
+
+  .kurs-table th,
+  .kurs-table td {
+    padding: 10px 4px !important;
+    font-size: 11px !important;
+    white-space: normal;
+  }
+
+  .kurs-table th small {
+    font-size: 9px !important;
+    letter-spacing: 0 !important;
+  }
+}
+#layanan .features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+#layanan .feature {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  #layanan .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+
+/* ==========================================
+   PREMIUM 3D SERVICE ICONS - LUXURY EDITION
+========================================== */
+
+#layanan .service-icon {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    #edf3ff 50%,
+    #dce8fa 100%
+  );
+
+  border: 1px solid rgba(255,255,255,.95);
+
+  box-shadow:
+    0 12px 22px rgba(43, 69, 120, .16),
+    0 4px 8px rgba(43, 69, 120, .08),
+    inset 0 3px 6px rgba(255,255,255,.95),
+    inset 0 -4px 8px rgba(80, 100, 150, .08);
+
+  transition: all .35s ease;
+  position: relative;
+}
+
+#layanan .service-icon svg {
+  width: 68px;
+  height: 68px;
+  overflow: visible;
+
+  filter:
+    drop-shadow(0 3px 2px rgba(25, 45, 90, .20))
+    drop-shadow(0 7px 5px rgba(35, 65, 120, .15));
+
+  transition: all .35s ease;
+}
+
+/* 01 - SAPPHIRE BLUE */
+#layanan .feature:nth-child(1) .service-icon svg linearGradient stop:first-child {
+  stop-color: #9DEBFF !important;
+}
+
+#layanan .feature:nth-child(1) .service-icon svg linearGradient stop:last-child {
+  stop-color: #2563EB !important;
+}
+
+/* 02 - AMETHYST PURPLE */
+#layanan .feature:nth-child(2) .service-icon svg linearGradient stop:first-child {
+  stop-color: #E9D5FF !important;
+}
+
+#layanan .feature:nth-child(2) .service-icon svg linearGradient stop:last-child {
+  stop-color: #9333EA !important;
+}
+
+/* 03 - ARCTIC CYAN */
+#layanan .feature:nth-child(3) .service-icon svg linearGradient stop:first-child {
+  stop-color: #A5F3FC !important;
+}
+
+#layanan .feature:nth-child(3) .service-icon svg linearGradient stop:last-child {
+  stop-color: #0891B2 !important;
+}
+
+/* 04 - CHAMPAGNE GOLD */
+#layanan .feature:nth-child(4) .service-icon svg linearGradient stop:first-child {
+  stop-color: #FFF0B3 !important;
+}
+
+#layanan .feature:nth-child(4) .service-icon svg linearGradient stop:last-child {
+  stop-color: #D97706 !important;
+}
+
+/* 3D HOVER */
+#layanan .feature:hover .service-icon {
+  transform: translateY(-7px) scale(1.07);
+
+  box-shadow:
+    0 18px 28px rgba(43, 69, 120, .20),
+    0 7px 12px rgba(43, 69, 120, .10),
+    inset 0 3px 6px rgba(255,255,255,.95);
+}
+
+#layanan .feature:hover .service-icon svg {
+  transform: translateY(-3px) scale(1.06);
+}
+
+#layanan .feature {
+  padding: 30px 22px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  #layanan .service-icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 14px;
+    border-radius: 19px;
+  }
+
+  #layanan .service-icon svg {
+    width: 55px;
+    height: 55px;
+  }
+
+  #layanan .feature {
+    padding: 20px 12px;
+  }
+}
+
+/* PREMIUM ICON PANDUAN TRANSAKSI */
+
+.panduan-icon {
+  width: 86px;
+  height: 86px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+
+  /* Emerald 3D background */
+  background: linear-gradient(
+    145deg,
+    #ecfff6 0%,
+    #b8f3d5 45%,
+    #72d9aa 100%
+  );
+
+  border: 1px solid #8ce3b9;
+
+  box-shadow:
+    0 10px 18px rgba(4, 120, 87, .20),
+    0 4px 7px rgba(5, 150, 105, .12),
+    inset 0 3px 5px rgba(255,255,255,.95),
+    inset 0 -4px 7px rgba(4, 120, 87, .12);
+
+  transition: all .35s ease;
+  position: relative;
+}
+
+.panduan-icon svg {
+  width: 70px;
+  height: 70px;
+
+  filter:
+    drop-shadow(0 3px 2px rgba(0, 80, 50, .20))
+    drop-shadow(0 7px 5px rgba(5, 120, 80, .18));
+
+  transition: all .35s ease;
+}
+
+.panduan-card:hover .panduan-icon {
+  transform: translateY(-6px) scale(1.06);
+
+  box-shadow:
+    0 16px 25px rgba(4, 120, 87, .25),
+    inset 0 3px 6px rgba(255,255,255,.95),
+    inset 0 -4px 8px rgba(4, 120, 87, .15);
+}
+
+.panduan-card:hover .panduan-icon svg {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .panduan-icon {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 14px;
+    border-radius: 19px;
+  }
+
+  .panduan-icon svg {
+    width: 56px;
+    height: 56px;
+  }
+}
+</style>
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll('[data-id][data-en]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    setLanguage(this.dataset.lang);
+  });
+});
+</script>
+
+<style>
+/* =========================================
+   ALDI'E$ CHANGER — FLOATING DECORATION
+   BERANDA TIDAK DIUBAH
+========================================= */
+
+@keyframes aldiFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-22px) rotate(5deg);
+  }
+}
+
+@keyframes aldiFloatReverse {
+  0%, 100% {
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    transform: translateY(18px) rotate(-6deg);
+  }
+}
+
+/* Lapisan section */
+.kurs-section,
+.calculator-section,
+.panduan-section,
+#layanan,
+#tentang,
+footer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Konten tetap di atas dekorasi */
+.kurs-section > *,
+.calculator-section > *,
+.panduan-section > *,
+#layanan > *,
+#tentang > *,
+footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dekorasi transparan */
+.kurs-section::before,
+.kurs-section::after,
+.calculator-section::before,
+.calculator-section::after,
+.panduan-section::before,
+.panduan-section::after,
+#layanan::before,
+#layanan::after,
+#tentang::before,
+#tentang::after,
+footer::before,
+footer::after {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* KURS */
+.kurs-section::before {
+  content: "€";
+  top: 35px;
+  right: 5%;
+  font-size: clamp(130px, 19vw, 230px);
+  color: rgba(22,120,185,.075);
+  animation: aldiFloat 8s ease-in-out infinite;
+}
+
+.kurs-section::after {
+  content: "¥";
+  bottom: 35px;
+  left: 3%;
+  font-size: clamp(100px, 15vw, 180px);
+  color: rgba(34,184,214,.075);
+  animation: aldiFloatReverse 9s ease-in-out infinite;
+}
+
+/* KALKULATOR */
+.calculator-section::before {
+  content: "$";
+  top: 35px;
+  right: 4%;
+  font-size: clamp(130px, 18vw, 210px);
+  color: rgba(22,120,185,.065);
+  animation: aldiFloatReverse 8s ease-in-out infinite;
+}
+
+.calculator-section::after {
+  content: "⇄";
+  bottom: 35px;
+  left: 3%;
+  font-size: clamp(100px, 15vw, 170px);
+  color: rgba(22,184,160,.08);
+  animation: aldiFloat 10s ease-in-out infinite;
+}
+
+/* PANDUAN */
+.panduan-section::before {
+  content: "◈";
+  top: 25px;
+  right: 5%;
+  font-size: clamp(120px, 17vw, 200px);
+  color: rgba(22,120,185,.07);
+  animation: aldiFloat 9s ease-in-out infinite;
+}
+
+.panduan-section::after {
+  content: "✓";
+  bottom: 25px;
+  left: 4%;
+  font-size: clamp(110px, 15vw, 175px);
+  color: rgba(22,164,107,.07);
+  animation: aldiFloatReverse 8s ease-in-out infinite;
+}
+
+/* LAYANAN */
+#layanan::before {
+  content: "✦";
+  top: 25px;
+  left: 4%;
+  font-size: clamp(110px, 16vw, 190px);
+  color: rgba(34,184,214,.09);
+  animation: aldiFloatReverse 9s ease-in-out infinite;
+}
+
+#layanan::after {
+  content: "€";
+  bottom: 15px;
+  right: 4%;
+  font-size: clamp(130px, 17vw, 200px);
+  color: rgba(22,120,185,.065);
+  animation: aldiFloat 8s ease-in-out infinite;
+}
+
+/* TENTANG KAMI */
+#tentang::before {
+  content: "◎";
+  top: 20px;
+  right: 5%;
+  font-size: clamp(130px, 18vw, 210px);
+  color: rgba(22,120,185,.07);
+  animation: aldiFloat 9s ease-in-out infinite;
+}
+
+#tentang::after {
+  content: "$";
+  bottom: 10px;
+  left: 4%;
+  font-size: clamp(110px, 15vw, 175px);
+  color: rgba(34,184,214,.065);
+  animation: aldiFloatReverse 8s ease-in-out infinite;
+}
+
+/* FOOTER */
+footer::before {
+  content: "€";
+  top: 10px;
+  left: 5%;
+  font-size: clamp(100px, 15vw, 170px);
+  color: rgba(22,120,185,.065);
+  animation: aldiFloatReverse 9s ease-in-out infinite;
+}
+
+footer::after {
+  content: "¥";
+  bottom: 5px;
+  right: 5%;
+  font-size: clamp(110px, 16vw, 180px);
+  color: rgba(22,164,107,.07);
+  animation: aldiFloat 8s ease-in-out infinite;
+}
+
+/* RESPONSIVE HP */
+@media(max-width:600px) {
+  .kurs-section::before,
+  .calculator-section::before,
+  .panduan-section::before,
+  #layanan::before,
+  #tentang::before,
+  footer::before {
+    opacity: .65;
+    right: -35px;
+  }
+
+  .kurs-section::after,
+  .calculator-section::after,
+  .panduan-section::after,
+  #layanan::after,
+  #tentang::after,
+  footer::after {
+    opacity: .65;
+    left: -35px;
+  }
+}
+
+/* AKSESIBILITAS */
+@media(prefers-reduced-motion:reduce) {
+  .kurs-section::before,
+  .kurs-section::after,
+  .calculator-section::before,
+  .calculator-section::after,
+  .panduan-section::before,
+  .panduan-section::after,
+  #layanan::before,
+  #layanan::after,
+  #tentang::before,
+  #tentang::after,
+  footer::before,
+  footer::after {
+    animation: none !important;
+  }
+}
+/* =================================
+   PANDUAN TRANSAKSI - 5 LANGKAH
+================================= */
+
+
+/* INFORMASI PENTING */
+
+.panduan-info {
+  margin: 30px 0 22px;
+  padding: 24px 26px;
+  background: linear-gradient(135deg, #effaff, #f0fff8);
+  border: 1px solid #cce9f2;
+  border-left: 5px solid #20b982;
+  border-radius: 14px;
+}
+
+.panduan-info h3 {
+  color: #1682a8;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin: 0 0 10px;
+}
+
+.panduan-info h4 {
+  color: #123b59;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.panduan-info p {
+  color: #526b7c;
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0 0 10px;
+}
+
+.panduan-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* TOMBOL WHATSAPP */
+
+.panduan-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 25px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #20b982, #119b70);
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 7px 18px rgba(32, 185, 130, 0.2);
+  transition: all 0.25s ease;
+}
+
+.panduan-wa:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(32, 185, 130, 0.3);
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 600px) {
+  .panduan-card {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .panduan-icon {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 13px;
+  }
+
+  .panduan-card h3 {
+    font-size: 15px;
+  }
+
+  .panduan-card p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .panduan-info {
+    padding: 19px 17px;
+    margin: 24px 0 18px;
+  }
+
+  .panduan-info h4 {
+    font-size: 15px;
+  }
+
+  .panduan-info p {
+    font-size: 13px;
+  }
+
+  .panduan-wa {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+/* 4 IKON LAYANAN - GREEN THEME */
+
+.service-icon svg defs linearGradient stop:first-child {
+  stop-color: #A7F3D0 !important;
+}
+
+.service-icon svg defs linearGradient stop:last-child {
+  stop-color: #059669 !important;
+}
+
+/* Aksen hijau pada ikon */
+.service-icon svg {
+  filter: drop-shadow(0 3px 5px rgba(5, 150, 105, 0.12));
+}
+.panduan-card {
+  position: relative;
+}
+
+.panduan-number {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #123b59;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: left;
+  z-index: 5;
+}
+
+/* ANIMASI PANDUAN TRANSAKSI */
+.panduan-section.panduan-anim-ready .panduan-card {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity .7s ease,
+    transform .7s cubic-bezier(.2,.7,.2,1),
+    box-shadow .3s ease;
+}
+
+.panduan-section.panduan-anim-ready .panduan-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.panduan-section .panduan-card:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.panduan-section .panduan-card:nth-child(2) {
+  transition-delay: .12s;
+}
+
+.panduan-section .panduan-card:nth-child(3) {
+  transition-delay: .24s;
+}
+
+.panduan-section .panduan-card:nth-child(4) {
+  transition-delay: .36s;
+}
+
+.panduan-section .panduan-card:nth-child(5) {
+  transition-delay: .48s;
+}
+
+.panduan-section .panduan-card.is-visible:hover {
+  transform: translateY(-5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panduan-section .panduan-card,
+  .panduan-section.panduan-anim-ready .panduan-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+/* EFEK HOVER TEKS PANDUAN */
+.panduan-card h3,
+.panduan-card p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.panduan-card:hover h3 {
+  transform: translateY(-3px);
+  color: #1682B8;
+}
+
+.panduan-card:hover p {
+  transform: translateY(-2px);
+  color: #34566F;
+}
+/* EFEK HOVER TEKS LAYANAN KAMI */
+.feature h3,
+.feature p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature:hover h3 {
+  transform: translateY(-3px);
+  color: #1682B8;
+}
+
+.feature:hover p {
+  transform: translateY(-2px);
+  color: #34566F;
+}
+/* EFEK HOVER INFORMASI PENTING */
+.panduan-info {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panduan-info h3,
+.panduan-info h4,
+.panduan-info p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.panduan-info:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(22, 104, 145, 0.14);
+}
+
+.panduan-info:hover h3,
+.panduan-info:hover h4 {
+  transform: translateY(-2px);
+  color: #1682B8;
+}
+
+.panduan-info:hover p {
+  transform: translateY(-2px);
+  color: #34566F;
+}
+.hero-contact {
+  background: linear-gradient(135deg, #70D5FF, #42B8E8) !important;
+  color: #ffffff !important;
+  border: 1px solid #70BFE8 !important;
+  box-shadow: 0 5px 15px rgba(66, 184, 232, 0.20);
+  transition: all 0.3s ease;
+}
+
+.hero-contact:hover {
+  background: linear-gradient(135deg, #42B8E8, #1682B8) !important;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+}
+/* KECILKAN PEMBUNGKUS KURS MATA UANG */
+.hero-benefits {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.currency-row {
+  grid-column: 1 / -1;
+  justify-self: start;
+  width: fit-content !important;
+  max-width: 100%;
+}
+.hero-benefits {
+  background: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.currency-row {
+  display: inline-flex !important;
+  width: fit-content !important;
+  max-width: 100%;
+  padding: 6px 10px !important;
+  border: 1px solid #D4E8EF !important;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #F5FCFF, #EAFBF5) !important;
+  box-shadow: none !important;
+}
+
+.currency-row {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.currency-row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    110deg,
+    transparent,
+    rgba(255,255,255,0.75),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: currencyShimmer 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes currencyShimmer {
+  0%, 65% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.currency-row strong {
+  color: #000000 !important;
+}
+</style>
+
+<script>
+function jalankanAnimasiPanduan() {
+  const section = document.querySelector("#panduan");
+  if (!section) return;
+
+  const cards = section.querySelectorAll(".panduan-container .panduan-card");
+  if (!cards.length) return;
+
+  section.classList.add("panduan-anim-ready");
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach(function(card) {
+    observer.observe(card);
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", jalankanAnimasiPanduan);
+} else {
+  jalankanAnimasiPanduan();
+}
+</script>
+
+</body>
+</html>
